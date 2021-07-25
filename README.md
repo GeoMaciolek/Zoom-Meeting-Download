@@ -2,11 +2,15 @@
 
 ## Overview
 
+A python script/tool to bulk download Zoom cloud recordings and transfer them to Google drive using `rclone`
+
+### Notes / Caveats
+
 > Note 2021-07-25: This is a fork of [tribloom/Zoom-Meeting-Download](https://github.com/tribloom/Zoom-Meeting-Download) adding features & cleanup. (Undecided if I'll try to get it merged!) I'm in the process of converting it to use jwt keys etc. This is very much a a "use at your own risk" tool, and I'd advise against using it if you're not familiar with python and the shell. --GMaciolek
 
 Note: You must create a "logs" directory under scripts location or you will get an error. You will need to have a OAuth credentials from Zoom in order to run the script, not a user's key and secret. Instructions for Zoom Oauth are found at https://marketplace.zoom.us/docs/guides/build/oauth-app. You may want/need to adjust line 553 (`directory = "/srv/app_bconnsync_aux0/" + args["email"] + " Zoom recordings"+date_string`) to fit your OS and directory structure.
 
-Download Zoom cloud recordings and transfer them to Google drive using `rclone`
+
 
 ## Usage
 
